@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Generateur de mots de passe</title>
+    <style>
+        :root {
+            --bg: #f2f7fb;
+            --card: #ffffff;
+            --text: #1f2d3d;
+            --muted: #5e7182;
+            --accent: #0e7490;
+            --line: #d9e5ee;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: linear-gradient(180deg, var(--bg), #e8f1f7);
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 8px 24px rgba(16, 36, 55, 0.06);
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 1.8rem;
+            color: #0f2b46;
+        }
+
+        h2 {
+            margin-top: 22px;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        p, li {
+            line-height: 1.55;
+            color: var(--muted);
+        }
+
+        code {
+            background: #eef5fa;
+            border: 1px solid #d9e7f1;
+            border-radius: 6px;
+            padding: 2px 6px;
+            color: #0f2b46;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <h1>Documentation de l'application</h1>
+            <p>
+                Cette application genere automatiquement 10 mots de passe robustes et permet de les copier rapidement.
+            </p>
+
+            <h2>Fonctionnalites</h2>
+            <ul>
+                <li>Generation automatique des mots de passe au lancement.</li>
+                <li>Bouton pour regenenrer instantanement une nouvelle liste.</li>
+                <li>Bouton Copier pour chaque mot de passe.</li>
+                <li>Feedback visuel en rouge pendant 1 seconde apres copie.</li>
+                <li>Ouverture directe de cette documentation et du changelog depuis l'interface.</li>
+            </ul>
+
+            <h2>Regles de generation</h2>
+            <ul>
+                <li>Longueur totale: 20 caracteres.</li>
+                <li>2 lettres majuscules.</li>
+                <li>3 chiffres.</li>
+                <li>2 caracteres speciaux.</li>
+                <li>13 lettres minuscules.</li>
+            </ul>
+
+            <h2>Lancement</h2>
+            <p>
+                Depuis le dossier du projet, executez <code>python3 password_generator_app.py</code>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

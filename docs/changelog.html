@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Generateur de mots de passe</title>
+    <style>
+        :root {
+            --bg: #f3f8fc;
+            --card: #ffffff;
+            --text: #1f2d3d;
+            --muted: #566b7d;
+            --accent: #0e7490;
+            --line: #d8e5ee;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: linear-gradient(180deg, var(--bg), #e9f2f8);
+        }
+
+        .wrap {
+            max-width: 950px;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 8px 24px rgba(16, 36, 55, 0.06);
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            color: #0f2b46;
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: var(--accent);
+            font-size: 1.15rem;
+        }
+
+        li {
+            line-height: 1.5;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <h1>Historique des mises a jour</h1>
+            <h2>2026-04-19</h2>
+            <ul>
+                <li>Creation de la version Python de l'application.</li>
+                <li>Reproduction du comportement de generation: 10 mots de passe de 20 caracteres avec composition fixe (2 majuscules, 3 chiffres, 2 speciaux, 13 minuscules).</li>
+                <li>Ajout d'une interface Tkinter avec bouton de generation et bouton Copier pour chaque mot de passe.</li>
+                <li>Ajout d'un retour visuel apres copie (mot de passe en rouge pendant 1 seconde).</li>
+                <li>Ajout d'une structure projet Python (src, tests, docs).</li>
+                <li>Ajout de tests unitaires pour valider longueur, composition et nombre de mots de passe generes.</li>
+                <li>Modernisation de l'interface: carte centrale, meilleure palette de couleurs et espacement.</li>
+                <li>Recentrage visuel des boutons et des lignes de mots de passe.</li>
+                <li>Lisibilite amelioree des mots de passe (taille, contraste, fond dedie, bordure legere).</li>
+                <li>Correction du contraste des boutons pour garantir la visibilite du texte sur macOS (normal et actif).</li>
+                <li>Reduction de la largeur initiale de la fenetre.</li>
+                <li>Hauteur de fenetre fixee (redimensionnement vertical desactive).</li>
+                <li>Ajout d'une barre de defilement verticale pour afficher l'ensemble des mots de passe.</li>
+                <li>Retrait de la barre de defilement selon preference utilisateur.</li>
+                <li>Largeur fixee a 780 px et hauteur augmentee a 680 px.</li>
+                <li>Reduction de la taille d'affichage des mots de passe pour conserver une vue complete sans scroll.</li>
+                <li>Reduction de la taille du bouton de generation et des espacements verticaux pour afficher le dernier mot de passe.</li>
+                <li>Reduction legere de la taille du titre principal.</li>
+                <li>Centrage automatique de la fenetre au lancement.</li>
+                <li>Reduction importante du cadre principal (marges et paddings) pour une interface plus compacte.</li>
+                <li>Generation automatique des 10 mots de passe a l'ouverture de l'application.</li>
+                <li>Simplification du projet en un seul fichier Python: run.py.</li>
+                <li>Suppression des modules Python secondaires pour reduire le nombre de fichiers.</li>
+                <li>Nettoyage des dossiers techniques inutiles (src, tests, caches) et suppression de requirements.txt.</li>
+                <li>Nouvelle reduction de la largeur de fenetre: 740 px.</li>
+                <li>Renommage du fichier principal: run.py vers password_generator_app.py.</li>
+                <li>Suppression du fichier d'origine Random.html.</li>
+                <li>Ajout d'une documentation HTML: docs/documentation.html.</li>
+                <li>Ajout d'un changelog HTML: docs/changelog.html.</li>
+                <li>Ajout de boutons dans l'application pour ouvrir la documentation et le changelog HTML.</li>
+                <li>Regroupement des acces Documentation/Historique dans un seul bouton menu.</li>
+                <li>Nouvelle reduction de la largeur de la fenetre principale: 700 px.</li>
+                <li>Ajout d'un lanceur Windows: lancer_app_windows.bat.</li>
+                <li>Integration du contenu de docs/CHANGELOG.md directement dans ce fichier changelog HTML.</li>
+                <li>Suppression du fichier Markdown docs/CHANGELOG.md devenu redondant.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
