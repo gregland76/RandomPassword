@@ -1,6 +1,8 @@
-# Generateur de mots de passe (version Python)
+# RandomPassword
 
-Cette application Python reproduit le comportement de l'application HTML:
+Application Python avec interface tkinter pour generer instantanement 10 mots de passe forts, avec copie en un clic et retour visuel immediat.
+
+Chaque mot de passe suit une composition fixe:
 - generation de 10 mots de passe a la demande,
 - chaque mot de passe contient exactement:
   - 2 lettres majuscules,
